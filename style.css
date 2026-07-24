@@ -201,7 +201,7 @@ section .main .button:hover i{
     height: 45px;
     border-radius: 5px;
     font-size: 20px;
-    margin: 2px 0;
+    margin: 10px 0;
     line-height: 40px;
     border: 2px solid #999999;
     transition: 0.3s;
@@ -226,7 +226,7 @@ section .main .button:hover i{
 }
 .products .box .card .product_text .product_star{
     color: #f7c600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .products .box .card .product_text .btn{
@@ -235,5 +235,4 @@ section .main .button:hover i{
     background: linear-gradient(to right, #c72092, #6c14d0);
     color: white;
     text-decoration: none;
-   
 }
