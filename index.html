@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike - Liv An - Store</title>
+    <title>LivAn's Store | Everyday Style</title>
     <link rel="stylesheet" href="style.css">    
-    <link rel="shortcut icon" href="/image/logo.png">
+    <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
 </head>
 <body>
      <section>
         <nav>
             <div class="logo">
-                <h1>Shoe<span>Store</span></h1>
+                <h1>LivAn's<span>Store</span></h1>
             </div>
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -32,17 +33,20 @@
          <div class="main" id="Home">
              <div class="main_content">
                 <div class="main_text">
-                  <h1>NIKE <br><span>Collection</span></h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, hic? 
-                        Rem rerum quisquam laborum sit, inventore aliquam aperiam? 
-                        Magnam repudiandae voluptatum excepturi maiores sint cum,
-                        illum sapiente alias. Aut laborum quis sapiente. 
-                        Est asperiores ea quam voluptatem atque iure officiis. 
-                    </p>
+                    <p class="hero-eyebrow">WELCOME TO LIVAN'S STORE</p>
+                    <h1>Everything you need,<br><span>at your fingertips.</span></h1>
+                    <p>Find comfortable shoes, easy-to-style clothing, and everyday favorites, all in one place.</p>
+                    <a class="button" href="#Products">
+                        Shop Now
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </a>
                  </div>
                     <div class="main-img">
-                            <img src="image/shoes.png" alt="">
+                            <img class="hero-founder" src="image/livan.png" alt="LivAn at the store">
+                            <div class="hero-image-inset">
+                                <img src="image/livans-storefront.png" alt="Outside view of LivAn's Store">
+                                <span><i class="fa-solid fa-store" aria-hidden="true"></i> LivAn's Store</span>
+                            </div>
                     </div>
              </div>
              <div class="social_icons">
@@ -51,29 +55,60 @@
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-linkedin-in"></i>
              </div>
-             <button class="button">
-                            <a href="#Products">Shop Now</a> 
-                            <i class="fa-solid fa-chevron-right"></i>   
-            </button>
          </div>
     </section>
 
      <div class="products" id="Products">
-        <h1>Products</h1>
+        <div class="products-heading">
+            <div>
+                <p class="eyebrow">THE LIVAN'S EDIT</p>
+                <h1>Find your style</h1>
+                <p>Everyday favorites for wherever life takes you.</p>
+            </div>
+        </div>
+        <div class="shop-categories">
+            <h2>Shop by category</h2>
+            <div class="category-grid" role="group" aria-label="Browse product categories">
+                <button class="category-card is-active" type="button" data-filter="all" aria-pressed="true">
+                    <span class="category-image category-image-wide"><img src="image/All-Items.jpg" alt=""></span>
+                    <span class="category-name">All items</span>
+                    <span class="category-link">Shop all <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </button>
+                <button class="category-card" type="button" data-filter="shoes" aria-pressed="false">
+                    <span class="category-image"><img src="image/shoes2.png" alt=""></span>
+                    <span class="category-name">Shoes</span>
+                    <span class="category-link">Shop shoes <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </button>
+                <button class="category-card" type="button" data-filter="clothing" aria-pressed="false">
+                    <span class="category-image"><img src="image/images.jpg" alt=""></span>
+                    <span class="category-name">Clothing</span>
+                    <span class="category-link">Shop clothing <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </button>
+                <button class="category-card" type="button" data-filter="bags" aria-pressed="false">
+                    <span class="category-image"><img src="image/images%20(5).jpg" alt=""></span>
+                    <span class="category-name">Bags</span>
+                    <span class="category-link">Shop bags <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </button>
+                <button class="category-card" type="button" data-filter="accessories" aria-pressed="false">
+                    <span class="category-image"><img src="image/images%20(6).jpg" alt=""></span>
+                    <span class="category-name">Accessories</span>
+                    <span class="category-link">Shop accessories <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </button>
+            </div>
+        </div>
             <div class="box">
-             <div class="card">
+             <div class="card" data-category="shoes">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes1.png" alt="">
+                        <img src="image/shoes1.png" alt="Air Flex Runner sneakers">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
+                         <span class="product-category">Shoes</span>
+                         <h2>Air Flex Runner</h2>
+                            <p>Lightweight cushioning for daily miles and all-day comfort.</p>
                           <h3>$105.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
@@ -85,19 +120,18 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="shoes">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes8.png" alt="">
+                        <img src="image/shoes8.png" alt="Urban Pace sneakers">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
+                         <span class="product-category">Shoes</span>
+                         <h2>Urban Pace</h2>
+                            <p>A versatile everyday sneaker with a clean, modern profile.</p>
                           <h3>$100.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
@@ -108,19 +142,18 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="shoes">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes2.png" alt="">
+                        <img src="image/shoes2.png" alt="Court Classic sneakers">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
+                         <span class="product-category">Shoes</span>
+                         <h2>Court Classic</h2>
+                            <p>Sport-inspired style with a cushioned, supportive feel.</p>
                           <h3>$150.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
@@ -132,19 +165,18 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="shoes">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes3.png" alt="">
+                        <img src="image/shoes3.png" alt="Cloud Step trainers">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
+                         <span class="product-category">Shoes</span>
+                         <h2>Cloud Step</h2>
+                            <p>Soft support and a flexible sole for busy days on the move.</p>
                           <h3>$99.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
@@ -154,20 +186,103 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="shoes">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/shoes4.png" alt="Black and blue Aero Motion running shoe">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Shoes</span>
+                        <h2>Aero Motion</h2>
+                        <p>Breathable mesh and a cushioned sole for daily movement.</p>
+                        <h3>$109.99</h3>
+                        <div class="product_star" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" data-category="shoes">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/shoes5.png" alt="Gray and white Cloud Comfort sneaker">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Shoes</span>
+                        <h2>Cloud Comfort</h2>
+                        <p>A soft, neutral everyday sneaker with a flexible feel.</p>
+                        <h3>$94.99</h3>
+                        <div class="product_star" aria-label="4 out of 5 stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" data-category="shoes">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/shoes6.png" alt="Bright orange Sunset Flex running shoe">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Shoes</span>
+                        <h2>Sunset Flex</h2>
+                        <p>Lightweight cushioning with a bright, energetic colorway.</p>
+                        <h3>$114.99</h3>
+                        <div class="product_star" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" data-category="shoes">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/shoes7.png" alt="Black and red Redline street runner">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Shoes</span>
+                        <h2>Redline Street</h2>
+                        <p>Sport-inspired style with a supportive, durable sole.</p>
+                        <h3>$104.99</h3>
+                        <div class="product_star" aria-label="4 out of 5 stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" data-category="clothing">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes4.png" alt="">
+                        <img src="image/images.jpg" alt="White everyday T-shirt">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
-                          <h3>$98.99</h3>
+                         <span class="product-category">Clothing</span>
+                         <h2>Essential Tee</h2>
+                            <p>Soft cotton with an easy fit for everyday layering.</p>
+                          <h3>$29.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -177,20 +292,19 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="clothing">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes5.png" alt="">
+                        <img src="image/images%20(1).jpg" alt="White fleece hoodie">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
-                          <h3>$160.99</h3>
+                         <span class="product-category">Clothing</span>
+                         <h2>Everyday Hoodie</h2>
+                            <p>Cozy midweight fleece made for relaxed comfort.</p>
+                          <h3>$64.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -199,20 +313,19 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="accessories">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes6.png" alt="">
+                        <img src="image/images%20(2).jpg" alt="White adjustable cap">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
-                          <h3>$170.99</h3>
+                         <span class="product-category">Accessories</span>
+                         <h2>Classic Cap</h2>
+                            <p>A simple adjustable cap to finish your everyday look.</p>
+                          <h3>$24.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -223,20 +336,19 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="bags">
                      <div class="small_card">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-share"></i>
                      </div>
                     <div class="image">
-                        <img src="image/shoes7.png" alt="">
+                        <img src="image/images%20(3).jpg" alt="Olive everyday backpack">
                     </div>
                        <div class="product_text">
-                         <h2>NIKE</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptate, hic?
-                            </p>
-                          <h3>$110.99</h3>
+                         <span class="product-category">Accessories</span>
+                         <h2>Everyday Backpack</h2>
+                            <p>Roomy, lightweight storage for work, school, or weekends.</p>
+                          <h3>$54.99</h3>
                             <div class="product_star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -246,9 +358,279 @@
                             <a href="#" class="btn">Add To Cart</a>
                          </div>
                 </div>
+                <div class="card" data-category="clothing">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/images%20(4).jpg" alt="Blue denim jacket">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Clothing</span>
+                        <h2>Classic Denim Jacket</h2>
+                        <p>A timeless layer that pairs easily with everyday outfits.</p>
+                        <h3>$79.99</h3>
+                        <div class="product_star" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" data-category="bags">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/images%20(5).jpg" alt="Black shoulder bag">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Accessories</span>
+                        <h2>Everyday Shoulder Bag</h2>
+                        <p>A compact carry-all for your daily essentials.</p>
+                        <h3>$39.99</h3>
+                        <div class="product_star" aria-label="4 out of 5 stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" data-category="accessories">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/images%20(6).jpg" alt="Minimal watch with a white strap">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Accessories</span>
+                        <h2>Minimal Everyday Watch</h2>
+                        <p>A clean, versatile design that goes with any look.</p>
+                        <h3>$89.99</h3>
+                        <div class="product_star" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" data-category="accessories">
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="image">
+                        <img src="image/images%20(7).jpg" alt="Round-frame sunglasses">
+                    </div>
+                    <div class="product_text">
+                        <span class="product-category">Accessories</span>
+                        <h2>Round Frame Sunglasses</h2>
+                        <p>An easy finishing touch for sunny days and weekends.</p>
+                        <h3>$34.99</h3>
+                        <div class="product_star" aria-label="4 out of 5 stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
                 
             </div>
             
      </div>
+    <section class="about" id="About">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-main-image">
+                    <button class="gallery-arrow gallery-previous" type="button" aria-label="Show previous gallery image">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <img id="about-gallery-image" class="gallery-photo" src="image/livans-storefront.png" alt="LivAn's Store storefront">
+                    <span class="gallery-caption" id="about-gallery-caption" aria-live="polite">LivAn's Storefront</span>
+                    <button class="gallery-arrow gallery-next" type="button" aria-label="Show next gallery image">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="about-thumbnails">
+                    <button class="gallery-thumbnail is-active" type="button" data-image="image/livans-storefront.png" data-alt="LivAn's Store storefront" data-caption="LivAn's Storefront" data-kind="photo" aria-label="Show LivAn's storefront" aria-pressed="true">
+                        <img src="image/livans-storefront.png" alt="">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-image="image/livan.png" data-alt="LivAn, owner of LivAn's Store" data-caption="Meet LivAn" data-kind="photo" aria-label="Show LivAn" aria-pressed="false">
+                        <img src="image/livan.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="about-eyebrow">A LITTLE ABOUT US</p>
+                <h1>About <span>LivAn's Store</span></h1>
+                <p>
+                    Founded by LivAn, our store brings together comfortable shoes,
+                    easy-to-style clothing, and useful everyday accessories. We
+                    believe great everyday style should feel effortless.
+                </p>
+                <div class="about-features">
+                    <div>
+                        <i class="fa-solid fa-shoe-prints"></i>
+                        <h3>Premium Quality</h3>
+                        <p>Selected shoes made for lasting comfort and performance.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Reliable delivery and simple order tracking.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Trusted Service</h3>
+                        <p>Secure purchases and friendly customer support.</p>
+                    </div>
+                </div>
+                <a href="#Products" class="about-btn">Explore Products</a>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="Review">
+        <div class="section-heading">
+            <h1>Customer <span>Reviews</span></h1>
+            <p>See what customers say about shopping with LivAn's Store.</p>
+        </div>
+        <div class="review-cards">
+            <article class="review-card">
+                <img src="image/saryneth.jpg" alt="Customer saryneth">
+                <h3>saryneth</h3>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Great style and a comfortable fit. Ordering was easy, and my shoes arrived in excellent condition.</p>
+            </article>
+            <article class="review-card">
+                <img src="image/sokpor.jpg" alt="Customer Sokpor">
+                <h3>Sokpor</h3>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>The team was helpful when I had questions about sizing. I love my new pair and would shop here again.</p>
+            </article>
+            <article class="review-card">
+                <img src="image/bora.jpg" alt="Customer Bora">
+                <h3>Bora Kim</h3>
+                <div class="review-stars" aria-label="4 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Good selection and quick delivery. The shoes are comfortable for everyday wear.</p>
+            </article>
+            <article class="review-card">
+                <img src="image/lychhe.png" alt="Customer Nita">
+                <h3>LyChee</h3>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>The shoes feel comfortable all day, and they go with so many outfits.</p>
+            </article>
+            <article class="review-card">
+                <img src="image/nhean.jpg" alt="Customer Dara">
+                <h3>Mr Nhean</h3>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Good selection, helpful sizing information, and an easy shopping experience.</p>
+            </article>
+            <article class="review-card">
+                <img src="image/nut.png" alt="Customer Maly">
+                <h3>mr channut</h3>
+                <div class="review-stars" aria-label="4 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>My new pair arrived quickly and feels great for everyday walks.</p>
+            </article>
+        </div>
+    </section>
+    <section class="services" id="Services">
+        <div class="section-heading">
+            <h1>Our <span>Services</span></h1>
+            <p>Helpful service at every step of your shopping experience.</p>
+        </div>
+        <div class="service-cards">
+            <article class="service-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Convenient delivery options help get your order to you promptly.</p>
+            </article>
+            <article class="service-card">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>Easy Returns</h3>
+                <p>Need a different size? Contact us for help with an eligible return or exchange.</p>
+            </article>
+            <article class="service-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Customer Support</h3>
+                <p>Our team is here to answer product and order questions.</p>
+            </article>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column footer-about">
+                <h2>LivAn's<span> Store</span></h2>
+                <p>Everyday shoes, clothing, and accessories, selected for comfort and easy style.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <a href="#Home">Home</a>
+                <a href="#Products">Products</a>
+                <a href="#About">About</a>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
+                <a href="tel:+85512345678"><i class="fa-solid fa-phone"></i> +855 12 345 678</a>
+                <a href="mailto:hello@livans.store"><i class="fa-solid fa-envelope"></i> hello@livans.store</a>
+                <p><i class="fa-solid fa-clock"></i> Mon-Sat: 9:00 AM-8:00 PM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026. All rights reserved.</p>
+            <h4>developed by <span style="color: red; font-weight: 600; text-decoration: underline;">Liv An</span></h4>
+        </div>
+    </footer>
 </body>
 </html>
