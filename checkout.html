@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | LivAn's Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="checkout.js" defer></script>
+</head>
+<body class="checkout-page">
+    <header class="checkout-header">
+        <a class="checkout-brand" href="index.html">LivAn's <span>Store</span></a>
+        <a class="checkout-back" href="index.html#Products">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Continue shopping
+        </a>
+    </header>
+
+    <main class="checkout-shell">
+        <div class="checkout-intro">
+            <p class="eyebrow">CHECKOUT</p>
+            <h1>Complete your order</h1>
+            <p>Enter your delivery details and choose how you would like to pay.</p>
+        </div>
+
+        <div class="checkout-layout">
+            <section class="checkout-form-card" aria-labelledby="delivery-heading">
+                <h2 id="delivery-heading">Delivery details</h2>
+                <div class="checkout-message" id="checkout-message" role="status" aria-live="polite" hidden></div>
+                <form id="checkout-form">
+                    <div class="checkout-fields">
+                        <label>
+                            Full name
+                            <input name="fullName" type="text" autocomplete="name" required>
+                        </label>
+                        <label>
+                            Email address
+                            <input name="email" type="email" autocomplete="email" required>
+                        </label>
+                        <label>
+                            Phone number
+                            <input name="phone" type="tel" autocomplete="tel" required>
+                        </label>
+                        <label>
+                            City or province
+                            <input name="city" type="text" autocomplete="address-level1" required>
+                        </label>
+                        <label class="checkout-field-wide">
+                            Delivery address
+                            <textarea name="address" rows="3" autocomplete="street-address" required></textarea>
+                        </label>
+                    </div>
+
+                    <fieldset class="payment-methods">
+                        <legend>Payment method</legend>
+                        <label class="payment-choice">
+                            <input type="radio" name="payment" value="cash-on-delivery" checked>
+                            <span>
+                                Cash on delivery
+                                <small>Pay when your order arrives.</small>
+                            </span>
+                        </label>
+                        <label class="payment-choice payment-choice-disabled">
+                            <input type="radio" name="payment" value="online" disabled>
+                            <span>
+                                Card or online payment
+                                <small>Not available yet; a payment provider must be connected.</small>
+                            </span>
+                        </label>
+                    </fieldset>
+
+                    <p class="checkout-demo-note">
+                        Demo checkout only: this page does not send or save your details, and no payment is processed.
+                    </p>
+                    <button class="place-order-button" type="submit" id="place-order-button">Place demo order</button>
+                </form>
+            </section>
+
+            <aside class="checkout-order-card" aria-labelledby="order-summary-heading">
+                <h2 id="order-summary-heading">Order summary</h2>
+                <div class="checkout-items" id="checkout-items"></div>
+                <div class="checkout-subtotal">
+                    <span>Subtotal</span>
+                    <strong id="checkout-subtotal">$0.00</strong>
+                </div>
+                <p class="checkout-shipping-note">Delivery details and any delivery fee will be confirmed by the store.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="checkout-footer">
+        <a href="index.html">LivAn's Store</a>
+        <span>Questions? Contact the store before placing an order.</span>
+    </footer>
+</body>
+</html>
